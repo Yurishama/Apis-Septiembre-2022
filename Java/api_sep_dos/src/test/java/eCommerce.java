@@ -16,6 +16,9 @@ public class eCommerce {
     static private String url_base = "webapi.segundamano.mx";
     static private String email = "test2022_agente@mailinator.com";
     static private String password = "54321";
+    static private String access_token;
+    static private String account_id;
+    static private String uuid;
 
     @Name("Obtener Token")
     private String obtener_Token(){
@@ -34,12 +37,20 @@ public class eCommerce {
         //Cambiar el body a JSon
         JsonPath jsonResponse = response.jsonPath();
 
-        String access_token =jsonResponse.get("access_token");
-        System.out.println("Token " + access_token);
+        String accesstoken =jsonResponse.get("access_token");
+        System.out.println("Token en funcion: " + accesstoken);
+        access_token = accesstoken;
 
         //Otras variables
         String accountID =jsonResponse.get("account.account_id");
-        System.out.println(accountID);
+        System.out.println("account id en funcion: " + accountID);
+        account_id = accountID;
+
+        //Asignar la variable uuid
+        String uid = jsonResponse.get("account.uuid");
+        System.out.println("uuid en funcion: " + uid);
+        uuid = uid;
+
 
         return access_token;
 
@@ -174,6 +185,51 @@ public class eCommerce {
         String headers_response = response.getHeaders().toString();
 
         assertTrue(headers_response.contains("application/json"));
+
+    }
+
+    @Test
+    @Order(4)
+    public void post_CrearUnaDireccion_201(){
+
+        String token = obtener_Token();
+        System.out.println("Token: " + token);
+
+        System.out.println("Token de funcion: " + access_token);
+        System.out.println("account id de funcion: " + account_id);
+        System.out.println("uuid de funcion: " + uuid);
+
+
+        //ejecucion
+        RestAssured.baseURI=String.format("https://%s/addresses/v1/create",url_base);
+
+        Response response = given()
+                .log().all()
+                .formParam("contact","Agente de ventas")
+                .formParam("phone","8776655443")
+                .formParam("rfc","CAPL800101")
+                .formParam("zipCode","45999")
+                .formParam("exteriorInfo","Miguel Hidalgo 4232")
+                .formParam("interiorInfo","2")
+                .formParam("region","11")
+                .formParam("municipality","300")
+                .formParam("area","8094")
+                .formParam("alias","La oficina")
+                .header("Content-type","application/x-www-form-urlencoded")
+                .header("Accept","application/json, text/plain, */*")
+                .post();
+
+
+
+        /*assertEquals(email,jsonResponse.get("account.email"));
+        assertEquals("tag:scmcoord.com,2013:api", jsonResponse.get("token_type"));
+        //Validar que el contenido de datos del token
+        assertTrue(access_token.matches("[A-Za-z0-9-_]+"));
+        assertTrue(headers_response.contains("Content-Type"));
+        */
+
+
+
 
     }
 

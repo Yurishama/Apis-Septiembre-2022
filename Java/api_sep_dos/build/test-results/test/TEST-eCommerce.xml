@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="eCommerce" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-06T03:01:12" hostname="saidayurishi-pro" time="4.296">
+<testsuite name="eCommerce" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-10-08T14:53:03" hostname="saidayurishi-pro" time="4.625">
   <properties/>
-  <testcase name="get_obtenerCategorias_200()" classname="eCommerce" time="1.931"/>
-  <testcase name="post_crearUsuario_401()" classname="eCommerce" time="1.244"/>
-  <testcase name="post_ObtenerUsuario_200()" classname="eCommerce" time="1.12"/>
+  <testcase name="get_obtenerCategorias_200()" classname="eCommerce" time="1.485"/>
+  <testcase name="post_crearUsuario_401()" classname="eCommerce" time="0.784"/>
+  <testcase name="post_ObtenerUsuario_200()" classname="eCommerce" time="0.965"/>
+  <testcase name="post_CrearUnaDireccion_201()" classname="eCommerce" time="1.39"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/public/categories/filter?lang=es
 Proxy:			<none>
@@ -23,7 +24,7 @@ Request params:	<none>
 Query params:	lang=es
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczg2Mi4wQG1haWxpbmF0b3IuY29tOjU0MzIx
+Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczczOC4wQG1haWxpbmF0b3IuY29tOjU0MzIx
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -31,7 +32,7 @@ Multiparts:		<none>
 Body:
 {
     "account": {
-        "email": "agente_ventas862.0@mailinator.com"
+        "email": "agente_ventas738.0@mailinator.com"
     }
 }
 Body response: {"error":{"code":"ACCOUNT_VERIFICATION_REQUIRED"}}
@@ -53,7 +54,49 @@ Body:
         "email": "test2022_agente@mailinator.com"
     }
 }
-Body response: {"access_token":"mc1x92fe0233720103b67ec74813f180a03fde37e50c_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+Body response: {"access_token":"mc1x6ccc9463ff8d46b8a241a99e41ebb7082096c4b7_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
+Proxy:			<none>
+Request params:	<none>
+Query params:	lang=es
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dGVzdDIwMjJfYWdlbnRlQG1haWxpbmF0b3IuY29tOjU0MzIx
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Body response: {"access_token":"mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+Token en funcion: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+account id en funcion: /private/accounts/11881665
+uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
+Token: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+Token de funcion: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+account id de funcion: /private/accounts/11881665
+uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/addresses/v1/create
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	contact=Agente de ventas
+				phone=8776655443
+				rfc=CAPL800101
+				zipCode=45999
+				exteriorInfo=Miguel Hidalgo 4232
+				interiorInfo=2
+				region=11
+				municipality=300
+				area=8094
+				alias=La oficina
+Path params:	<none>
+Headers:		Accept=application/json, text/plain, */*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

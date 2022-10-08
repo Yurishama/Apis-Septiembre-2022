@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.295s</div>
+<div class="counter">4.624s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,22 @@
 </thead>
 <tr>
 <td class="success">get_obtenerCategorias_200()</td>
-<td class="success">1.931s</td>
+<td class="success">1.485s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">post_CrearUnaDireccion_201()</td>
+<td class="success">1.390s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">post_ObtenerUsuario_200()</td>
-<td class="success">1.120s</td>
+<td class="success">0.965s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">post_crearUsuario_401()</td>
-<td class="success">1.244s</td>
+<td class="success">0.784s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -116,7 +121,7 @@ Request params:	&lt;none&gt;
 Query params:	lang=es
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczg2Mi4wQG1haWxpbmF0b3IuY29tOjU0MzIx
+Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczczOC4wQG1haWxpbmF0b3IuY29tOjU0MzIx
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
@@ -124,7 +129,7 @@ Multiparts:		&lt;none&gt;
 Body:
 {
     &quot;account&quot;: {
-        &quot;email&quot;: &quot;agente_ventas862.0@mailinator.com&quot;
+        &quot;email&quot;: &quot;agente_ventas738.0@mailinator.com&quot;
     }
 }
 Body response: {&quot;error&quot;:{&quot;code&quot;:&quot;ACCOUNT_VERIFICATION_REQUIRED&quot;}}
@@ -146,7 +151,49 @@ Body:
         &quot;email&quot;: &quot;test2022_agente@mailinator.com&quot;
     }
 }
-Body response: {&quot;access_token&quot;:&quot;mc1x92fe0233720103b67ec74813f180a03fde37e50c_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+Body response: {&quot;access_token&quot;:&quot;mc1x6ccc9463ff8d46b8a241a99e41ebb7082096c4b7_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	lang=es
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic dGVzdDIwMjJfYWdlbnRlQG1haWxpbmF0b3IuY29tOjU0MzIx
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+Body response: {&quot;access_token&quot;:&quot;mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+Token en funcion: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+account id en funcion: /private/accounts/11881665
+uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
+Token: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+Token de funcion: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+account id de funcion: /private/accounts/11881665
+uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/addresses/v1/create
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	contact=Agente de ventas
+				phone=8776655443
+				rfc=CAPL800101
+				zipCode=45999
+				exteriorInfo=Miguel Hidalgo 4232
+				interiorInfo=2
+				region=11
+				municipality=300
+				area=8094
+				alias=La oficina
+Path params:	&lt;none&gt;
+Headers:		Accept=application/json, text/plain, */*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
 </pre>
 </span>
 </div>
@@ -158,7 +205,7 @@ Body response: {&quot;access_token&quot;:&quot;mc1x92fe0233720103b67ec74813f180a
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Oct 5, 2022, 10:01:16 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Oct 8, 2022, 9:53:08 AM</p>
 </div>
 </div>
 </body>
