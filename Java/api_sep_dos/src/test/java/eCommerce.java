@@ -1,3 +1,9 @@
+import io.qameta.allure.Allure;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
+
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -55,12 +61,15 @@ public class eCommerce {
 
     @Test
     @Order(1)
+    @DisplayName("Test case: Obtener categorias")
+    @Severity(SeverityLevel.BLOCKER)
     public void get_obtenerCategorias_200(){
         RestAssured.baseURI=String.format("https://%s/nga/api/v1.1/public/categories/filter?lang=es",url_base);
 
         Response response = given()
                 .log().all()
                 .queryParam("lang","es")
+                .filter(new AllureRestAssured())
                 .get();
 
         //Imprimir el body response
@@ -283,6 +292,7 @@ public class eCommerce {
                 .header("x-source","PHOENIX_DESKTOP")
                 .auth().preemptive().basic(uuid,access_token)
                 .body(body_request)
+                .filter(new AllureRestAssured())
                 .post();
 
         String body_response = response.getBody().asString();
@@ -295,7 +305,7 @@ public class eCommerce {
         assertNotNull(body_response);
 
         //Validar que el body contenga la palabra ID
-        assertTrue(body_response.contains("addressID"));
+        assertTrue(body_response.contains("ad_id"));
 
 
         //Validar el tiempo de respuesta

@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">9.932s</div>
+<div class="counter">9.599s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">80%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,154 +61,56 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="post_CrearUnAnuncio_200()"></a>
-<h3 class="failures">post_CrearUnAnuncio_200()</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
-	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
-	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
-	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:179)
-	at app//eCommerce.post_CrearUnAnuncio_200(eCommerce.java:298)
-	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@12.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@12.0.1/java.lang.reflect.Method.invoke(Method.java:567)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@12.0.1/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@12.0.1/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at app//org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@12.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@12.0.1/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
 <tr>
 <th>Test</th>
+<th>Method name</th>
 <th>Duration</th>
 <th>Result</th>
 </tr>
 </thead>
 <tr>
+<td class="success">Test case: Obtener categorias</td>
 <td class="success">get_obtenerCategorias_200()</td>
-<td class="success">0.114s</td>
+<td class="success">0.164s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">post_CrearUnAnuncio_200()</td>
-<td class="failures">6.022s</td>
-<td class="failures">failed</td>
+<td class="success">post_CrearUnAnuncio_200()</td>
+<td class="success">post_CrearUnAnuncio_200()</td>
+<td class="success">6.032s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">post_CrearUnaDireccion_201()</td>
-<td class="success">2.086s</td>
+<td class="success">post_CrearUnaDireccion_201()</td>
+<td class="success">1.237s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">post_ObtenerUsuario_200()</td>
-<td class="success">0.981s</td>
+<td class="success">post_ObtenerUsuario_200()</td>
+<td class="success">1.365s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">post_crearUsuario_401()</td>
-<td class="success">0.729s</td>
+<td class="success">post_crearUsuario_401()</td>
+<td class="success">0.801s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request method:	POST
@@ -224,12 +126,12 @@ Headers:		Authorization=Basic dGVzdDIwMjJfYWdlbnRlQG1haWxpbmF0b3IuY29tOjU0MzIx
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body response: {&quot;access_token&quot;:&quot;mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-Token en funcion: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
+Body response: {&quot;access_token&quot;:&quot;mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+Token en funcion: mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2
 account id en funcion: /private/accounts/11881665
 uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
-Token: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
-Token de funcion: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
+Token: mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2
+Token de funcion: mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2
 account id de funcion: /private/accounts/11881665
 uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
 Request method:	POST
@@ -241,7 +143,7 @@ Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
 Headers:		Accept=application/json, text/plain, */*
 				x-source=PHOENIX_DESKTOP
-				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXgzNGU4OTJiYTQ3YTFkMWY3Yjc5OTAyNzlhYWNhZjhlZmRjZGQ2MzgxX3Yy
+				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXhlODUyMjkzOGJmYTk1ZTViYzgxZTc4ZmMzNzYzNDUyZjg3NzBkM2IwX3Yy
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
@@ -258,7 +160,7 @@ Body:
     &quot;show_phone&quot;: &quot;false&quot;,
     &quot;contact_phone&quot;: &quot;76013183&quot;
 }
-Body response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74736075&quot;,&quot;subject&quot;:&quot;Te organizo tu evento YAY&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8143&quot;,&quot;label&quot;:&quot;Organización de eventos&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8140&quot;,&quot;label&quot;:&quot;Eventos&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8000&quot;,&quot;label&quot;:&quot;Servicios&quot;}}},&quot;region&quot;:{&quot;code&quot;:&quot;5&quot;,&quot;label&quot;:&quot;Baja California Sur&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;51&quot;,&quot;label&quot;:&quot;Comondú&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;36611&quot;,&quot;label&quot;:&quot;Zona Centro&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:20000}},&quot;payment_info&quot;:{&quot;payment_required&quot;:false,&quot;title&quot;:&quot;¡Vende más rápido con los Productos Premium!&quot;,&quot;description&quot;:&quot;Elige la opción que mejor se ajuste a tus necesidades&quot;,&quot;products&quot;:[{&quot;id&quot;:&quot;serv_free&quot;,&quot;name&quot;:&quot;Anuncio básico&quot;,&quot;label&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;description&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;price&quot;:0,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_tokens&quot;]},{&quot;id&quot;:&quot;serv_daily&quot;,&quot;name&quot;:&quot;Subir Diario&quot;,&quot;label&quot;:&quot;Recibe hasta 5 veces más contactos en 7 días&quot;,&quot;description&quot;:&quot;&quot;,&quot;price&quot;:120,&quot;credits&quot;:120,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]},{&quot;id&quot;:&quot;serv_premiumpackage_2&quot;,&quot;name&quot;:&quot;Subir diario y Posición principal&quot;,&quot;label&quot;:&quot;Recibe hasta 12 veces más contactos&quot;,&quot;description&quot;:&quot;Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días&quot;,&quot;price&quot;:220,&quot;credits&quot;:220,&quot;most_popular&quot;:true,&quot;active&quot;:true,&quot;tag&quot;:{&quot;slug&quot;:&quot;tag_recommended&quot;,&quot;name&quot;:&quot;RECOMENDADO&quot;},&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]}]}}}
+Body response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74736478&quot;,&quot;subject&quot;:&quot;Te organizo tu evento YAY&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8143&quot;,&quot;label&quot;:&quot;Organización de eventos&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8140&quot;,&quot;label&quot;:&quot;Eventos&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8000&quot;,&quot;label&quot;:&quot;Servicios&quot;}}},&quot;region&quot;:{&quot;code&quot;:&quot;5&quot;,&quot;label&quot;:&quot;Baja California Sur&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;51&quot;,&quot;label&quot;:&quot;Comondú&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;36611&quot;,&quot;label&quot;:&quot;Zona Centro&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:20000}},&quot;payment_info&quot;:{&quot;payment_required&quot;:false,&quot;title&quot;:&quot;¡Vende más rápido con los Productos Premium!&quot;,&quot;description&quot;:&quot;Elige la opción que mejor se ajuste a tus necesidades&quot;,&quot;products&quot;:[{&quot;id&quot;:&quot;serv_free&quot;,&quot;name&quot;:&quot;Anuncio básico&quot;,&quot;label&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;description&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;price&quot;:0,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_tokens&quot;]},{&quot;id&quot;:&quot;serv_daily&quot;,&quot;name&quot;:&quot;Subir Diario&quot;,&quot;label&quot;:&quot;Recibe hasta 5 veces más contactos en 7 días&quot;,&quot;description&quot;:&quot;&quot;,&quot;price&quot;:120,&quot;credits&quot;:120,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_paypal&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;]},{&quot;id&quot;:&quot;serv_premiumpackage_2&quot;,&quot;name&quot;:&quot;Subir diario y Posición principal&quot;,&quot;label&quot;:&quot;Recibe hasta 12 veces más contactos&quot;,&quot;description&quot;:&quot;Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días&quot;,&quot;price&quot;:220,&quot;credits&quot;:220,&quot;most_popular&quot;:true,&quot;active&quot;:true,&quot;tag&quot;:{&quot;slug&quot;:&quot;tag_recommended&quot;,&quot;name&quot;:&quot;RECOMENDADO&quot;},&quot;payment_methods&quot;:[&quot;pay_method_paypal&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;]}]}}}
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/public/categories/filter?lang=es
 Proxy:			&lt;none&gt;
@@ -278,7 +180,7 @@ Request params:	&lt;none&gt;
 Query params:	lang=es
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczEwOS4wQG1haWxpbmF0b3IuY29tOjU0MzIx
+Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczY0OC4wQG1haWxpbmF0b3IuY29tOjU0MzIx
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
@@ -286,7 +188,7 @@ Multiparts:		&lt;none&gt;
 Body:
 {
     &quot;account&quot;: {
-        &quot;email&quot;: &quot;agente_ventas109.0@mailinator.com&quot;
+        &quot;email&quot;: &quot;agente_ventas648.0@mailinator.com&quot;
     }
 }
 Body response: {&quot;error&quot;:{&quot;code&quot;:&quot;ACCOUNT_VERIFICATION_REQUIRED&quot;}}
@@ -308,7 +210,7 @@ Body:
         &quot;email&quot;: &quot;test2022_agente@mailinator.com&quot;
     }
 }
-Body response: {&quot;access_token&quot;:&quot;mc1xad47777c48718ecf95a99d94bdd873fce4d604e4_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+Body response: {&quot;access_token&quot;:&quot;mc1x79ad140dbfd537b879afd8df6a49bf6665bd7c2e_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			&lt;none&gt;
@@ -322,12 +224,12 @@ Headers:		Authorization=Basic dGVzdDIwMjJfYWdlbnRlQG1haWxpbmF0b3IuY29tOjU0MzIx
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body response: {&quot;access_token&quot;:&quot;mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-Token en funcion: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
+Body response: {&quot;access_token&quot;:&quot;mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11881665&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test2022_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;Norwood&quot;,&quot;phone&quot;:&quot;99542984&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;AEAS850120H2E&quot;,&quot;uuid&quot;:&quot;50498ff4-f7a2-42af-acaa-dd6aab89b4c8&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+Token en funcion: mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2
 account id en funcion: /private/accounts/11881665
 uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
-Token: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
-Token de funcion: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
+Token: mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2
+Token de funcion: mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2
 account id de funcion: /private/accounts/11881665
 uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
 Request method:	POST
@@ -347,12 +249,12 @@ Form params:	contact=Agente de ventas
 				alias=La oficina
 Path params:	&lt;none&gt;
 Headers:		Accept=application/json, text/plain, */*
-				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXg2MWM2YWJhYjQ4ZjhhYmIwY2M2NWFjNjQ5OWM5M2Y3OTA4NzAzN2E4X3Yy
+				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXgwNTgyOGUwZWM4NGYxZGE4OGZlOGZkZWJjZjQ2YjRkZTg3YjVkMTI5X3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body response: {&quot;addressID&quot;:&quot;528f2e4c-4722-11ed-8863-63733eb823d1&quot;}
+Body response: {&quot;addressID&quot;:&quot;50323c74-472d-11ed-9b09-8f3ff11e7e5c&quot;}
 </pre>
 </span>
 </div>
@@ -364,7 +266,7 @@ Body response: {&quot;addressID&quot;:&quot;528f2e4c-4722-11ed-8863-63733eb823d1
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Oct 8, 2022, 11:00:26 AM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Oct 8, 2022, 12:19:06 PM</p>
 </div>
 </div>
 </body>

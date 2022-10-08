@@ -11,12 +11,12 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-�Body response: {"access_token":"mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
-BToken en funcion: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
+�Body response: {"access_token":"mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+BToken en funcion: mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2
 2account id en funcion: /private/accounts/11881665
 6uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
-7Token: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
-BToken de funcion: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
+7Token: mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2
+BToken de funcion: mc1xe8522938bfa95e5bc81e78fc3763452f8770d3b0_v2
 2account id de funcion: /private/accounts/11881665
 6uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
 Request method:	POST
@@ -28,7 +28,7 @@
 Path params:	<none>
 3Headers:		Accept=application/json, text/plain, */*
 				x-source=PHOENIX_DESKTOP
-�				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXgzNGU4OTJiYTQ3YTFkMWY3Yjc5OTAyNzlhYWNhZjhlZmRjZGQ2MzgxX3Yy
+�				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXhlODUyMjkzOGJmYTk1ZTViYzgxZTc4ZmMzNzYzNDUyZjg3NzBkM2IwX3Yy
 "				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -45,7 +45,7 @@
     "show_phone": "false",
      "contact_phone": "76013183"
 }
-�Body response: {"data":{"ad":{"ad_id":"74736075","subject":"Te organizo tu evento YAY","category":{"code":"8143","label":"Organización de eventos","parent":{"code":"8140","label":"Eventos","parent":{"code":"8000","label":"Servicios"}}},"region":{"code":"5","label":"Baja California Sur"},"municipality":{"code":"51","label":"Comondú"},"area":{"code":"36611","label":"Zona Centro"},"price":{"currency":"MXN","value":20000}},"payment_info":{"payment_required":false,"title":"¡Vende más rápido con los Productos Premium!","description":"Elige la opción que mejor se ajuste a tus necesidades","products":[{"id":"serv_free","name":"Anuncio básico","label":"Anuncio con exposición regular, tendrás menos visitas","description":"Anuncio con exposición regular, tendrás menos visitas","price":0,"most_popular":false,"active":true,"payment_methods":["pay_method_tokens"]},{"id":"serv_daily","name":"Subir Diario","label":"Recibe hasta 5 veces más contactos en 7 días","description":"","price":120,"credits":120,"most_popular":false,"active":true,"payment_methods":["pay_method_credit","pay_method_points","pay_method_oxxo","pay_method_paypal"]},{"id":"serv_premiumpackage_2","name":"Subir diario y Posición principal","label":"Recibe hasta 12 veces más contactos","description":"Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días","price":220,"credits":220,"most_popular":true,"active":true,"tag":{"slug":"tag_recommended","name":"RECOMENDADO"},"payment_methods":["pay_method_credit","pay_method_points","pay_method_oxxo","pay_method_paypal"]}]}}}
+�Body response: {"data":{"ad":{"ad_id":"74736478","subject":"Te organizo tu evento YAY","category":{"code":"8143","label":"Organización de eventos","parent":{"code":"8140","label":"Eventos","parent":{"code":"8000","label":"Servicios"}}},"region":{"code":"5","label":"Baja California Sur"},"municipality":{"code":"51","label":"Comondú"},"area":{"code":"36611","label":"Zona Centro"},"price":{"currency":"MXN","value":20000}},"payment_info":{"payment_required":false,"title":"¡Vende más rápido con los Productos Premium!","description":"Elige la opción que mejor se ajuste a tus necesidades","products":[{"id":"serv_free","name":"Anuncio básico","label":"Anuncio con exposición regular, tendrás menos visitas","description":"Anuncio con exposición regular, tendrás menos visitas","price":0,"most_popular":false,"active":true,"payment_methods":["pay_method_tokens"]},{"id":"serv_daily","name":"Subir Diario","label":"Recibe hasta 5 veces más contactos en 7 días","description":"","price":120,"credits":120,"most_popular":false,"active":true,"payment_methods":["pay_method_paypal","pay_method_oxxo","pay_method_credit","pay_method_points"]},{"id":"serv_premiumpackage_2","name":"Subir diario y Posición principal","label":"Recibe hasta 12 veces más contactos","description":"Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días","price":220,"credits":220,"most_popular":true,"active":true,"tag":{"slug":"tag_recommended","name":"RECOMENDADO"},"payment_methods":["pay_method_paypal","pay_method_oxxo","pay_method_credit","pay_method_points"]}]}}}
 Request method:	GET
 YRequest URI:	https://webapi.segundamano.mx/nga/api/v1.1/public/categories/filter?lang=es
 Proxy:			<none>
@@ -65,7 +65,7 @@
 Query params:	lang=es
 Form params:	<none>
 Path params:	<none>
-SHeaders:		Authorization=Basic YWdlbnRlX3ZlbnRhczEwOS4wQG1haWxpbmF0b3IuY29tOjU0MzIx
+SHeaders:		Authorization=Basic YWdlbnRlX3ZlbnRhczY0OC4wQG1haWxpbmF0b3IuY29tOjU0MzIx
 				Accept=*/*
 "				Content-Type=application/json
 Cookies:		<none>
@@ -73,7 +73,7 @@
 Body:
 {
     "account": {
-5        "email": "agente_ventas109.0@mailinator.com"
+5        "email": "agente_ventas648.0@mailinator.com"
     }
 }
 BBody response: {"error":{"code":"ACCOUNT_VERIFICATION_REQUIRED"}}
@@ -95,7 +95,7 @@
 2        "email": "test2022_agente@mailinator.com"
     }
 }
-�Body response: {"access_token":"mc1xad47777c48718ecf95a99d94bdd873fce4d604e4_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+�Body response: {"access_token":"mc1x79ad140dbfd537b879afd8df6a49bf6665bd7c2e_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
 Request method:	POST
 QRequest URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -109,12 +109,12 @@
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-�Body response: {"access_token":"mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
-BToken en funcion: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
+�Body response: {"access_token":"mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+BToken en funcion: mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2
 2account id en funcion: /private/accounts/11881665
 6uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
-7Token: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
-BToken de funcion: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
+7Token: mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2
+BToken de funcion: mc1x05828e0ec84f1da88fe8fdebcf46b4de87b5d129_v2
 2account id de funcion: /private/accounts/11881665
 6uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
 Request method:	POST
@@ -134,9 +134,9 @@
 				alias=La oficina
 Path params:	<none>
 3Headers:		Accept=application/json, text/plain, */*
-�				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXg2MWM2YWJhYjQ4ZjhhYmIwY2M2NWFjNjQ5OWM5M2Y3OTA4NzAzN2E4X3Yy
+�				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXgwNTgyOGUwZWM4NGYxZGE4OGZlOGZkZWJjZjQ2YjRkZTg3YjVkMTI5X3Yy
 G				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-DBody response: {"addressID":"528f2e4c-4722-11ed-8863-63733eb823d1"}
+DBody response: {"addressID":"50323c74-472d-11ed-9b09-8f3ff11e7e5c"}
