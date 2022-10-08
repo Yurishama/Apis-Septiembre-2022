@@ -2,10 +2,7 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import jdk.jfr.Name;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.*;
@@ -217,19 +214,97 @@ public class eCommerce {
                 .formParam("alias","La oficina")
                 .header("Content-type","application/x-www-form-urlencoded")
                 .header("Accept","application/json, text/plain, */*")
+                .auth().preemptive().basic(uuid,access_token)
                 .post();
 
 
 
-        /*assertEquals(email,jsonResponse.get("account.email"));
+        /*
+
+        assertEquals(email,jsonResponse.get("account.email"));
+
         assertEquals("tag:scmcoord.com,2013:api", jsonResponse.get("token_type"));
+
         //Validar que el contenido de datos del token
+
         assertTrue(access_token.matches("[A-Za-z0-9-_]+"));
-        assertTrue(headers_response.contains("Content-Type"));
+
         */
 
+        String body_response = response.getBody().asString();
+        System.out.println("Body response: " + body_response );
+
+        //Pruebas
+        //al menos 5 pruebas
+
+        //Validar el status response
+        assertEquals(201,response.getStatusCode());
+
+        //Validar que nuestro body no este vacio
+        assertNotNull(body_response);
+
+        //Validar que el body contenga la palabra ID
+        assertTrue(body_response.contains("addressID"));
 
 
+        //Validar el tiempo de respuesta
+        long tiempo = response.getTime();
+        assertTrue(tiempo < 1800);
+
+        //Validar los headers
+        String headers_response = response.getHeaders().toString();
+        assertTrue(headers_response.contains("application/json"));
+
+    }
+
+    @Test
+    @Order(5)
+    public void post_CrearUnAnuncio_200(){
+
+        String token = obtener_Token();
+        System.out.println("Token: " + token);
+
+        System.out.println("Token de funcion: " + access_token);
+        System.out.println("account id de funcion: " + account_id);
+        System.out.println("uuid de funcion: " + uuid);
+
+        String body_request = "{\"category\":\"8143\"," +
+                "\"subject\":\"Te organizo tu evento YAY\"," +
+                "\"body\":\"trabajamos todo tipo de eventos, desde bautizos hasta bodas y divorcio\"," +
+                "\"region\":\"5\",\"municipality\":\"51\",\"area\":\"36611\",\"price\":\"20000\",\"phone_hidden\":\"true\",\"show_phone\":\"false\",\"contact_phone\":\"76013183\"}";
+
+        //ejecucion
+        RestAssured.baseURI=String.format("https://%s/v2/accounts/%s/up",url_base,uuid);
+
+        Response response = given()
+                .log().all()
+                .header("Content-type","application/json")
+                .header("Accept","application/json, text/plain, */*")
+                .header("x-source","PHOENIX_DESKTOP")
+                .auth().preemptive().basic(uuid,access_token)
+                .body(body_request)
+                .post();
+
+        String body_response = response.getBody().asString();
+        System.out.println("Body response: " + body_response );
+
+        //Validar el status response
+        assertEquals(200,response.getStatusCode());
+
+        //Validar que nuestro body no este vacio
+        assertNotNull(body_response);
+
+        //Validar que el body contenga la palabra ID
+        assertTrue(body_response.contains("addressID"));
+
+
+        //Validar el tiempo de respuesta
+        long tiempo = response.getTime();
+        assertTrue(tiempo < 3800);
+
+        //Validar los headers
+        String headers_response = response.getHeaders().toString();
+        assertTrue(headers_response.contains("application/json"));
 
     }
 

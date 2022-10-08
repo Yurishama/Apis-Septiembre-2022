@@ -1,11 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="eCommerce" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-10-08T14:53:03" hostname="saidayurishi-pro" time="4.625">
+<testsuite name="eCommerce" tests="5" skipped="0" failures="1" errors="0" timestamp="2022-10-08T16:00:16" hostname="saidayurishi-pro" time="9.944">
   <properties/>
-  <testcase name="get_obtenerCategorias_200()" classname="eCommerce" time="1.485"/>
-  <testcase name="post_crearUsuario_401()" classname="eCommerce" time="0.784"/>
-  <testcase name="post_ObtenerUsuario_200()" classname="eCommerce" time="0.965"/>
-  <testcase name="post_CrearUnaDireccion_201()" classname="eCommerce" time="1.39"/>
-  <system-out><![CDATA[Request method:	GET
+  <testcase name="post_CrearUnAnuncio_200()" classname="eCommerce" time="6.022">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:35)
+	at app//org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:179)
+	at app//eCommerce.post_CrearUnAnuncio_200(eCommerce.java:298)
+	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.1/java.lang.reflect.Method.invoke(Method.java:567)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@12.0.1/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@12.0.1/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at app//org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@12.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@12.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@12.0.1/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="get_obtenerCategorias_200()" classname="eCommerce" time="0.114"/>
+  <testcase name="post_crearUsuario_401()" classname="eCommerce" time="0.729"/>
+  <testcase name="post_ObtenerUsuario_200()" classname="eCommerce" time="0.981"/>
+  <testcase name="post_CrearUnaDireccion_201()" classname="eCommerce" time="2.086"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
+Proxy:			<none>
+Request params:	<none>
+Query params:	lang=es
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dGVzdDIwMjJfYWdlbnRlQG1haWxpbmF0b3IuY29tOjU0MzIx
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Body response: {"access_token":"mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+Token en funcion: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
+account id en funcion: /private/accounts/11881665
+uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
+Token: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
+Token de funcion: mc1x34e892ba47a1d1f7b7990279aacaf8efdcdd6381_v2
+account id de funcion: /private/accounts/11881665
+uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
+Request method:	POST
+Request URI:	https://webapi.segundamano.mx/v2/accounts/50498ff4-f7a2-42af-acaa-dd6aab89b4c8/up
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, text/plain, */*
+				x-source=PHOENIX_DESKTOP
+				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXgzNGU4OTJiYTQ3YTFkMWY3Yjc5OTAyNzlhYWNhZjhlZmRjZGQ2MzgxX3Yy
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "category": "8143",
+    "subject": "Te organizo tu evento YAY",
+    "body": "trabajamos todo tipo de eventos, desde bautizos hasta bodas y divorcio",
+    "region": "5",
+    "municipality": "51",
+    "area": "36611",
+    "price": "20000",
+    "phone_hidden": "true",
+    "show_phone": "false",
+    "contact_phone": "76013183"
+}
+Body response: {"data":{"ad":{"ad_id":"74736075","subject":"Te organizo tu evento YAY","category":{"code":"8143","label":"Organización de eventos","parent":{"code":"8140","label":"Eventos","parent":{"code":"8000","label":"Servicios"}}},"region":{"code":"5","label":"Baja California Sur"},"municipality":{"code":"51","label":"Comondú"},"area":{"code":"36611","label":"Zona Centro"},"price":{"currency":"MXN","value":20000}},"payment_info":{"payment_required":false,"title":"¡Vende más rápido con los Productos Premium!","description":"Elige la opción que mejor se ajuste a tus necesidades","products":[{"id":"serv_free","name":"Anuncio básico","label":"Anuncio con exposición regular, tendrás menos visitas","description":"Anuncio con exposición regular, tendrás menos visitas","price":0,"most_popular":false,"active":true,"payment_methods":["pay_method_tokens"]},{"id":"serv_daily","name":"Subir Diario","label":"Recibe hasta 5 veces más contactos en 7 días","description":"","price":120,"credits":120,"most_popular":false,"active":true,"payment_methods":["pay_method_credit","pay_method_points","pay_method_oxxo","pay_method_paypal"]},{"id":"serv_premiumpackage_2","name":"Subir diario y Posición principal","label":"Recibe hasta 12 veces más contactos","description":"Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días","price":220,"credits":220,"most_popular":true,"active":true,"tag":{"slug":"tag_recommended","name":"RECOMENDADO"},"payment_methods":["pay_method_credit","pay_method_points","pay_method_oxxo","pay_method_paypal"]}]}}}
+Request method:	GET
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/public/categories/filter?lang=es
 Proxy:			<none>
 Request params:	<none>
@@ -24,7 +166,7 @@ Request params:	<none>
 Query params:	lang=es
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczczOC4wQG1haWxpbmF0b3IuY29tOjU0MzIx
+Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczEwOS4wQG1haWxpbmF0b3IuY29tOjU0MzIx
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -32,7 +174,7 @@ Multiparts:		<none>
 Body:
 {
     "account": {
-        "email": "agente_ventas738.0@mailinator.com"
+        "email": "agente_ventas109.0@mailinator.com"
     }
 }
 Body response: {"error":{"code":"ACCOUNT_VERIFICATION_REQUIRED"}}
@@ -54,7 +196,7 @@ Body:
         "email": "test2022_agente@mailinator.com"
     }
 }
-Body response: {"access_token":"mc1x6ccc9463ff8d46b8a241a99e41ebb7082096c4b7_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+Body response: {"access_token":"mc1xad47777c48718ecf95a99d94bdd873fce4d604e4_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -68,12 +210,12 @@ Headers:		Authorization=Basic dGVzdDIwMjJfYWdlbnRlQG1haWxpbmF0b3IuY29tOjU0MzIx
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-Body response: {"access_token":"mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
-Token en funcion: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+Body response: {"access_token":"mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2","account":{"account_id":"/private/accounts/11881665","can_publish":true,"email":"test2022_agente@mailinator.com","email_verified":true,"locations":[],"name":"Norwood","phone":"99542984","phone_hidden":false,"professional":false,"rfc":"AEAS850120H2E","uuid":"50498ff4-f7a2-42af-acaa-dd6aab89b4c8"},"ad_events":{"24h":{"calls":0,"mails":0,"phone_views":0,"views":0},"7d":{"calls":0,"mails":0,"phone_views":0,"views":0},"total":{"calls":0,"mails":0,"phone_views":0,"views":0}},"token_type":"tag:scmcoord.com,2013:api"}
+Token en funcion: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
 account id en funcion: /private/accounts/11881665
 uuid en funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
-Token: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
-Token de funcion: mc1x62d2169db9bbec4b5493a1dc1c9a3e8309820bca_v2
+Token: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
+Token de funcion: mc1x61c6abab48f8abb0cc65ac6499c93f79087037a8_v2
 account id de funcion: /private/accounts/11881665
 uuid de funcion: 50498ff4-f7a2-42af-acaa-dd6aab89b4c8
 Request method:	POST
@@ -93,10 +235,12 @@ Form params:	contact=Agente de ventas
 				alias=La oficina
 Path params:	<none>
 Headers:		Accept=application/json, text/plain, */*
+				Authorization=Basic NTA0OThmZjQtZjdhMi00MmFmLWFjYWEtZGQ2YWFiODliNGM4Om1jMXg2MWM2YWJhYjQ4ZjhhYmIwY2M2NWFjNjQ5OWM5M2Y3OTA4NzAzN2E4X3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
+Body response: {"addressID":"528f2e4c-4722-11ed-8863-63733eb823d1"}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
