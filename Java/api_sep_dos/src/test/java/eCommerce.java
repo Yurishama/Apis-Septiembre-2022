@@ -1,3 +1,4 @@
+import com.github.javafaker.Faker;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -53,8 +54,6 @@ public class eCommerce {
         String uid = jsonResponse.get("account.uuid");
         System.out.println("uuid en funcion: " + uid);
         uuid = uid;
-
-
         return access_token;
 
     }
@@ -105,8 +104,21 @@ public class eCommerce {
     @Order(2)
     public void post_crearUsuario_401(){
 
+        //https://github.com/DiUS/java-faker
+
+        Faker faker = new Faker();
+//username()
+        String name = faker.name().fullName(); // Miss Samanta Schmidt
+        System.out.print("Dataname: " + name);
+        String firstName = faker.name().firstName();
+        String lastName = faker.name().lastName();
+        String username = faker.name().username();
+        //
+        //String streetAddress = faker.address().streetAddress(); // 60018 Sawayn Brooks Suite 449
+
         //Crear Usuario
-        String new_user = "agente_ventas" + (Math.floor(Math.random()*987)) + "@mailinator.com";
+        //String new_user = "agente_ventas" + (Math.floor(Math.random()*987)) + "@mailinator.com";
+        String new_user = username + "@mailinator.com";
         //String password = "12345";
         String bodyRequest = "{\"account\":{\"email\":\""+new_user+"\"}}";
 

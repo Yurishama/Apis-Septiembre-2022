@@ -21,6 +21,10 @@ dependencies {
     implementation 'io.qameta.allure:allure-rest-assured:2.13.9'
 
     testImplementation("org.slf4j:slf4j-simple:1.7.36")
+
+    //random dta
+
+    implementation 'com.github.javafaker:javafaker:1.0.2'
 }
 
 test {
